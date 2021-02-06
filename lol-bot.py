@@ -136,7 +136,7 @@ async def vuvuzela(ctx,meme:str):
         # create StreamPlayer
         vc= await channel.connect()
         try:
-            vc.play(discord.FFmpegPCMAudio(executable="ffmpeg.exe", 'mp3/'+source=meme+'.mp3'), after=lambda: print('done'))
+            vc.play(discord.FFmpegPCMAudio(executable="<ffmpeg.exe path>", 'mp3/'+source=meme+'.mp3'), after=lambda: print('done'))
         except Exception as e:
             raise
 
