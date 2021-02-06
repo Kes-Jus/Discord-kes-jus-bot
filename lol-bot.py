@@ -24,7 +24,7 @@ async def on_ready():
 
 from riotwatcher import LolWatcher, ApiError
 import pandas as pd
-api_key = 'RGAPI-1b81c0b6-5b13-45ff-9f36-597a687dce75'
+api_key = '<Api_Key>'
 watcher = LolWatcher(api_key)
 region = 'euw1'
 
@@ -148,7 +148,7 @@ async def vuvuzela(ctx,meme:str):
     else:
         await ctx.send('User is not in a channel.')
 
-#--------------send a pub every 1 hour--------------
+#--------------change "is watching" every 5 sec--------------
 
 watch_list = ["Netflix", "TV", "Anime", "YouTube", "You"]
 
